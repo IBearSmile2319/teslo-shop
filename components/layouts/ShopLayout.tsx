@@ -1,4 +1,5 @@
 import Head from "next/head"
+import { Navbar, SideMenu } from "../ui";
 
 interface IShopLayoutProps {
     title: string;
@@ -21,8 +22,10 @@ const ShopLayout = ({ title, pageDescription, imageFullUrl, children }: IShopLay
         </Head>
         <nav>
             {/* TODO: navbar */}
+            <Navbar/>   
         </nav>
         {/* TODO: sidebar */}
+        <SideMenu/>
 
         <main style={{
             margin: '80px auto',
